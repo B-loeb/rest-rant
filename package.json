@@ -15,7 +15,7 @@
   "bugs": {
     "url": "https://github.com/B-loeb/rest-rant/issues"
   },
-  "homepage": "https://github.com/B-loeb/rest-rant#readme",
+
   "dependencies": {
     "express": "^4.18.1"
   }
