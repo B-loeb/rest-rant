@@ -1,7 +1,7 @@
 require('dotenv').config()
 const express = require('express')
 const app = express()
-
+//import rouuter code from controller
 app.use('/places', require('./controllers/places'))
 
 app.get('/', (req, res) => {
