@@ -7,15 +7,17 @@ const app = express()
 app.set('view engine', 'jsx')
 app.engine('jsx', require('express-react-views').createEngine())
 
-//import rouuter code from controller
+//import router code from controller
 app.use('/places', require('./controllers/places'))
 
+//home route
 app.get('/', (req, res) => {
     res.render('home')
 })
+
 //wildcard route stays at bottom
 app.get('*', (req, res) => {
-    res.status(404).send('<h1>404 Page</h1>')
+    res.render('error404')
 })
 
 app.listen(process.env.PORT)
