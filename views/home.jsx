@@ -13,9 +13,6 @@ function home () {
                         Photo by Israel-albornoz on <a href="https://unsplash.com/images">unsplash</a>
                     </div>
                 </div>
-                <a href="/places">
-                 <button className="btn-primary">Places Page</button>
-                </a>
             </main>
         </Def>
     )
