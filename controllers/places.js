@@ -12,7 +12,7 @@ router.get('/', (req, res) => {
         city: 'Phoenix',
         state: 'AZ',
         cuisines: 'Coffee, Bakery',
-        pic: 'public\images\danceDance.jpg'
+        pic: 'public/images/danceDance.jpg'
       }]
      
     res.render('places/index', { places })
