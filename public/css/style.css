@@ -8,7 +8,10 @@ main {
   margin-left: 20px;
   background-color: white;
 }
-
+.sushi {
+  height: auto;
+  width: 15vw;
+}
 nav {
   background-color: cornflowerblue;
   padding: 10px;
