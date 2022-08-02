@@ -12,10 +12,10 @@ function Def (html){
             <body>
             <nav>
              <ul>
-                 <li>
+                <li>
                      <a href="/">Home</a>
-                 </li>
-                 <li>
+                </li>
+                <li>
                      <a href="/places">Places</a>
                 </li>
                 <li>
@@ -23,7 +23,6 @@ function Def (html){
                 </li>
              </ul>
             </nav>
-
                 {html.children}
             </body>
         </html>
