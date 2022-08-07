@@ -9,7 +9,7 @@ const placeSchema = new mongoose.Schema({
   founded: {
     type: Number,
     min: [1666, 'Doest thou possess a soul?'],
-    max: [new Date().getFullYear(), 'This year has not happened yet slick.']
+    max: [new Date().getFullYear(), 'This year has not happened yet.']
   }
 })
 
