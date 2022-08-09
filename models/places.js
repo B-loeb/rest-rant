@@ -10,7 +10,8 @@ const placeSchema = new mongoose.Schema({
     type: Number,
     min: [1666, 'Doest thou possess a soul?'],
     max: [new Date().getFullYear(), 'This year has not happened yet.']
-  }
+  },
+  comments:[{ type: mongoose.Schema.Types.ObjectId, ref: 'Comment'}]
 })
 
 
