@@ -7,10 +7,14 @@ main {
   margin-right: 20px;
   margin-left: 20px;
   background-color: white;
+  text-align: center;
 }
 .sushi {
   height: auto;
   width: 15vw;
+}
+h3 {
+  text-align: center;
 }
 nav {
   background-color: cornflowerblue;
