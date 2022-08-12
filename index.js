@@ -12,6 +12,7 @@ app.engine('jsx', require('express-react-views').createEngine())
 app.use(express.static('public'))
 app.use(express.urlencoded({ extended: true }))
 app.use(methodOverride('_method'))
+
 //import router code from controller
 app.use('/places', require('./controllers/places'))
 
