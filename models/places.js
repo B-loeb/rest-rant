@@ -8,7 +8,7 @@ const placeSchema = new mongoose.Schema({
   state: { type: String, default: 'USA' },
   founded: {
     type: Number,
-    min: [1666, 'Doest thou possess a soul?'],
+    min: [1666, 'Art Thou Immortal?'],
     max: [new Date().getFullYear(), 'This year has not happened yet.']
   },
   comments:[{ type: mongoose.Schema.Types.ObjectId, ref: 'Comment'}]

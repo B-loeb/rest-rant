@@ -1,4 +1,3 @@
-
 const React = require('react')
 const Def = require('../default')
 
@@ -32,3 +31,5 @@ function index (data) {
       </Def>
     )
   }
+
+module.exports = index

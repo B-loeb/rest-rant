@@ -4,14 +4,15 @@ const Def = require('../default')
 function show (data) {
     let comments = (
         <h3 className="inactive">
-        No comments just yet.
+        None yet!
         </h3>
     )
     let rating = (
         <h3 className='inactive'>
-            Yet to be rated...
+            Yet to be rated.
         </h3>
     )
+    //RATING logic
     if (data.place.comments.length) {
       let sumRatings = data.place.comments.reduce((tot, c) => {
         return tot + c.stars
@@ -27,14 +28,14 @@ function show (data) {
         </h3>
       )
       
-    //comment logic
+    //COMMENT logic
     comments = data.place.comments.map(c => {
       return (
         <div className="border col-sm-4">
           <h2 className="rant">{c.rant ? 'Rant! 😡' : 'Rave! 😻'}</h2>
           <h4>{c.content}</h4>
           <h3>
-            <stong>- {c.author}</stong>
+            <stong>{c.author}</stong>
           </h3>
           <h4>Rating: {c.stars}</h4>
           <form method="POST" action={`/places/${data.place.id}/comment/${c.id}?_method=DELETE`}>
